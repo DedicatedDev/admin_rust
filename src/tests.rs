@@ -4,6 +4,7 @@ use rocket::http::Method::*;
 use rocket::http::Status;
 use rocket_contrib::templates::Template;
 
+
 macro_rules! dispatch {
     ($method:expr, $path:expr, $test_fn:expr) => ({
         let client = Client::new(rocket()).unwrap();
